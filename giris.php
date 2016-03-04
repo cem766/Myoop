@@ -13,7 +13,7 @@ class kisi{
 	}
 	
 	protected function set_isim($yeni_isim){
-		if( isim != "Yavuz Sultan Selim"){
+		if( isim != "Hümeyra"){
 		$this->isim = strtoupper($yeni_isim);	
 		}
 		
@@ -29,9 +29,9 @@ class kisi{
 
 class isci extends kisi{
 	protected function set_isim($yeni_isim){
-		if($yeni_isim == "phpcem"){
+		if($yeni_isim == "taylan"){
 			$this->isim = strtolower($yeni_isim);
-		}else if($yeni_isim == "Cem Kemal Kaderoğlu"){
+		}else if($yeni_isim == "taylan çocuk"){
 			parent::set_isim($yeni_isim);
 		}
 	}

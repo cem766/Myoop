@@ -5,7 +5,7 @@ $GLOBALS['config']=array('mysql'=>array(
 																				'host' 						=> '127.0.0.1',
 																				'db'							=> 'oop',
 																				'kullanici_adi' 	=> 'root',
-																				'sifre' 					=> '1234'),
+																				'sifre' 					=> ''),
 													'hatirla'=>array(
 																				'cookie_ismi' 		=> 'hash',
 																				'cookie_bitis'		=> 604800 ),

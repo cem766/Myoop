@@ -1,7 +1,12 @@
 <?php
 
-class Config{	
-	public static function getir($yol = null){		
+
+
+
+class Config{
+	
+	public static function getir($yol = null){
+				
 	if($yol){
 		$config = $GLOBALS['config'];
 		$yol 	= explode("/",$yol);
@@ -16,10 +21,9 @@ class Config{
 	}
 	return $config;	
 	}
+	
+	
 }
-
-
-
 
 
 

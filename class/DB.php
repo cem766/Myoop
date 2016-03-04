@@ -11,7 +11,7 @@ class DB{
 			public function __construct(){
 				
 				try{
-					
+					var_dump($this ->_pdo);
 					$this ->_pdo = new PDO('mysql:host='.Config::getir('mysql/host').';dbname='.Config::getir('mysql/db'),Config::getir('mysql/kullanici_adi'),Config::getir('mysql/sifre'));
 				}catch(PDOException $e){
 					die($e -> getMessage());
@@ -27,9 +27,7 @@ class DB{
 			
 			public function query($sql,$parametre = array()){				
 				$this ->_hatalar = false;
-				//echo '<br />hata burada - burayı ekrana yazdırabildim en azından<br />';
-				//echo "<br />".$sql;
-				var_dump($this ->_pdo);
+
 				if($this ->_query = $this ->_pdo -> prepare($sql)){
 					
 					$x = 1;
